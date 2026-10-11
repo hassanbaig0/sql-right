@@ -19,6 +19,7 @@ obj/
 *.stackdump
 core
 gmon.out
+main
 
 # Dependency and generated files
 *.d
