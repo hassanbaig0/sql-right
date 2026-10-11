@@ -1,0 +1,47 @@
+# Build outputs
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+build/
+bin/
+obj/
+
+# Debug and profiling artifacts
+*.pdb
+*.ilk
+*.gch
+*.stackdump
+core
+gmon.out
+
+# Dependency and generated files
+*.d
+*.map
+
+# VS Code (keep shared config, ignore personal settings)
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+.vscode/settings.json
+*.code-workspace
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor and OS leftovers
+*.swp
+*~
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
