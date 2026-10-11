@@ -1,12 +1,19 @@
 CC = gcc
-CFLAGS = -g -Wall -Wextra
+CFLAGS = -g -O0 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
 SRC = $(wildcard *.c)
-OUT = main.exe
+OUT = main
 
-all: $(OUT)
+.PHONY: all build run clean
+
+all: build
+
+build: $(OUT)
 
 $(OUT): $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
 
+run: build
+	./$(OUT)
+
 clean:
-	del $(OUT)
+	rm -f $(OUT)
